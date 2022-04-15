@@ -1,0 +1,30 @@
+.body{
+    background-color:  #1b1818;
+    min-height: 1000px;
+}
+.txt{
+    font-size: 19px;
+}
+.button button{
+    background-color: black;
+    border-radius: 26px;
+    font-size: 9px;
+    cursor: default;
+}
+.mg{
+    
+    height: 129px;
+    width: 271px;
+}
+.cursor{
+    cursor: default;
+}
+.mybtn{
+    background-color: #1b1919;
+    border: none;
+}
+.myrow{
+    height: 104px;
+    width: 171px;
+}
+
