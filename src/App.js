@@ -5,7 +5,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar2 from './Components/navbar/Navbar2';
 import Homepage from './Components/Homepage/Homepage';
 
-
 export class App extends Component {
   constructor(props)
   {
@@ -14,7 +13,7 @@ export class App extends Component {
       user_station_code:0
     }
   }
-  set_station_code=(code)=>{
+  set_station_code=async (code)=>{
     this.setState({
       user_station_code:code
     },()=>console.log(this.state))
@@ -24,11 +23,11 @@ export class App extends Component {
   render() {
     return (
       <div>
-        <Navbar2 set_station_code={this.set_station_code} />
+        <Navbar2 set_station_code={this.set_station_code} x={0} />
         {
           (()=>{
              if(this.state.user_station_code!=0)
-            return <Homepage station_code={this.state.user_station_code}/>
+            return <Homepage station_code={this.state.user_station_code} />
             
           })()
         }

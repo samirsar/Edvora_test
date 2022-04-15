@@ -298,7 +298,7 @@ ownfilter=(flag)=>{
                           <div className={`row ${homepagecss.myrow}`}>
                             
                             <div className="row my-1">
-                            <Form.Select aria-label="Default select example" value={this.state.search_state}  onChange={this.changing}>
+                            <Form.Select className={`${homepagecss.mysearch}`} aria-label="Default select example" value={this.state.search_state}  onChange={this.changing}>
   <option value="default" >State</option>
   {
      this.state.state.map(function(name,key){
@@ -309,7 +309,7 @@ ownfilter=(flag)=>{
 </Form.Select>
                             </div>
                             <div className="row my-1">
-                            <Form.Select aria-label="Default select example" value={this.state.search_city} onChange={this.citychanging} >
+                            <Form.Select className={`${homepagecss.mysearch}`}  aria-label="Default select example" value={this.state.search_city} onChange={this.citychanging} >
   <option>City</option>
   {
     this.state.city.map(function(name,key){
@@ -373,10 +373,10 @@ ownfilter=(flag)=>{
                       <div className="col-3">
                         <Image
                           className={`${homepagecss.mg}`}
-                          // src={google_map} thumbnail={1} />
-                          src={name.data.map_url}
-                          thumbnail={1}
-                        />
+                           src={google_map} thumbnail={1} />
+                           {/* src={name.data.map_url}
+                           thumbnail={1}
+                          />   */}
                       </div>
                       <div className="col-6">
                         <h6>Ride id:{name.id}</h6>

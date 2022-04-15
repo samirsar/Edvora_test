@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Navbar,Container,Image } from 'react-bootstrap'
 import logo from '../../images/man-profile-cartoon_18591-58482.webp'
+var t=0;
 export class Navbar2 extends Component {
     constructor(props)
     {
@@ -8,8 +9,14 @@ export class Navbar2 extends Component {
       this.state={
         user:{}
       }
+    
+    
     }
     componentDidMount=async()=>{
+    
+      if(t==0){
+        console.log(t);
+        t++;
       let url="https://assessment.api.vweb.app/user";
       let response = await fetch(url);
       let json1 = await response.json();
@@ -20,6 +27,7 @@ export class Navbar2 extends Component {
     },()=>{
       this.props.set_station_code(this.state.user.station_code);
     })
+  }
   
     }
     render() {
