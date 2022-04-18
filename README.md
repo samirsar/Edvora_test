@@ -1,4 +1,4 @@
-We can this project with following link
+We can  see this project with following link
 https://edvora-test-six.vercel.app/
 
 
