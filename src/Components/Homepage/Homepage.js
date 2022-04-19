@@ -379,7 +379,7 @@ ownfilter=(flag)=>{
                           />   */}
                       </div>
                       <div className="col-6">
-                        <h6>Ride id:{name.id}</h6>
+                        <h6>Ride id:{name.data.id}</h6>
                         <h6>Origin station:{name.data.origin_station_code}</h6>
                         <h6>Station path:{`[${name.data.station_path}]`}</h6>
                         <h6>Date:{name.data.date}</h6>
